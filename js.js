@@ -6,6 +6,10 @@ function makeYellow(){
 function makeGreen(){
     document.body.style.backgroundColor = 'Green';
 }
+
+function makePurple(){
+    document.body.style.backgroundColor = 'Purple';
+}
 // option 3
 const btnMakeBlue = document.getElementById('btn-make-blue');
 btnMakeBlue.onclick = function makeBlue(){

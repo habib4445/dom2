@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="user-info">No user</p>
+    <button id="btn-login">Login</button>
+
+
+    <h1 id="page-title" >Event Handler</h1>
+    <button id="btn-update-title">Update title</button>
+<script>
+// login info
+document.getElementById('btn-login')
+.addEventListener('click',function()
+{
+    const userInfoEl=document.getElementById('user-info');
+    userInfoEl.innerText='User logging successfully';
+}
+
+)
+
+
+
+    document.getElementById('btn-update-title')
+        .addEventListener('click',function (){
+            // console.log('btn clicked');
+            const pageTitleElement = document.getElementById('page-title');
+            console.log(pageTitleElement);
+            pageTitleElement.innerText='Updated page title';
+        })
+    
+</script>
+    <script src="handler.js"></script>
+
+    
+</body>
+</html>
